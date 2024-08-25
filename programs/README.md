@@ -1,6 +1,6 @@
-# NFT Marketplace
+# NFT Marketplace Program
 
-Welcome to the NFT Marketplace frontend and program built using Anchor on the Solana blockchain. This README will guide you through setting up the development environment, deploying the smart contract, and interacting with the program.
+The NFT Marketplace program built using Anchor on the Solana blockchain. This README will guide you through setting up the development environment, deploying the smart contract, and interacting with the program.
 
 ## Table of Contents
 
@@ -11,6 +11,42 @@ Welcome to the NFT Marketplace frontend and program built using Anchor on the So
 - [Testing](#testing)
 - [Troubleshooting](#troubleshooting)
 - [License](#license)
+
+## File Structure
+
+```
+nft-marketplace/
+├── programs/
+│   ├── src/
+│   │   ├── lib.rs
+│   │   ├── instructions.rs
+│   │   ├── state.rs
+│   │   ├── error.rs
+│   │   ├── utils.rs
+│   │   └── mod.rs
+│   └── Cargo.toml
+├── target/
+│   ├── idl/
+│   │   └── nft_marketplace.json
+│   └── programs/
+│       └── nft_marketplace.so
+├── frontend/web
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── styles/
+│   │   └── utils/
+│   ├── .env
+│   ├── package.json
+│   ├── tailwind.config.js
+│   └── tsconfig.json
+├── migrations/
+│   └── deploy.ts
+├── tests/
+│   └── nft_marketplace.spec.ts
+└── README.md
+```
 
 ## Prerequisites
 
@@ -40,10 +76,10 @@ cd nft-marketplace
 
 ### 2. Initialize the Anchor Project
 
-Navigate to the `programs/nft-marketplace` directory and build the Anchor project:
+Navigate to the project directory and build the Anchor project:
 
 ```bash
-cd programs/nft-marketplace
+cd programs
 anchor build
 ```
 
@@ -52,7 +88,7 @@ anchor build
 In the project root, install the necessary dependencies for the frontend:
 
 ```bash
-cd ../web
+cd frontend/web
 npm install
 ```
 
@@ -60,11 +96,11 @@ npm install
 
 ### 1. Configure Environment
 
-Create a `.env` file in the root of your project with the following content:
+Create a `.env` file in the root of the project with the following content:
 
 ```bash
 NETWORK_URL=https://api.devnet.solana.com
-SOLANA_KEYPAIR=wallet/solana/nft-marketplace.json
+SOLANA_KEYPAIR=path/to/your/solana/keypair.json
 ```
 
 ### 2. Deploy the Program
@@ -72,7 +108,7 @@ SOLANA_KEYPAIR=wallet/solana/nft-marketplace.json
 Deploy your smart contract to the Solana blockchain:
 
 ```bash
-cd programs/nft-marketplace
+cd programs
 anchor deploy
 ```
 
@@ -80,32 +116,21 @@ anchor deploy
 
 ### 1. Configure the Frontend
 
-Update the `src/anchorConfig.ts` file in the frontend directory with your program ID:
+Update the `src/anchorConfig.ts` file with your program ID:
 
 ```typescript
-import { AnchorProvider, Program } from '@coral-xyz/anchor';
 import { PublicKey } from '@solana/web3.js';
-import type { Marketplace } from '../target/types/marketplace';
-import { IDL as MarketplaceIDL } from '../target/types/marketplace';
 
-// Re-export the generated IDL and type
-export { Marketplace, MarketplaceIDL };
-
-// The programId is imported from the program IDL.
-export const MARKETPLACE_PROGRAM_ID = new PublicKey(MarketplaceIDL.address);
-
-// This is a helper function to get the Marketplace Anchor program.
-export function getMarketplaceProgram(provider: AnchorProvider) {
-  return new Program(MarketplaceIDL as Marketplace, MARKETPLACE_PROGRAM_ID, provider);
-}
+const PROGRAM_ID = new PublicKey("YOUR_PROGRAM_ID_HERE");
+export { PROGRAM_ID };
 ```
 
 ### 2. Start the Frontend
 
-Navigate to the `frontend` directory and start the development server:
+Navigate to the frontend directory and start the development server:
 
 ```bash
-cd web
+cd ../frontend/web
 npm run dev
 ```
 
@@ -118,7 +143,7 @@ Visit `http://localhost:3000` to interact with your NFT marketplace.
 Run the tests for your smart contract to ensure everything is functioning as expected:
 
 ```bash
-cd programs/nft-marketplace
+cd programs
 anchor test
 ```
 
@@ -130,4 +155,4 @@ anchor test
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+The MIT License - see the [LICENSE](LICENSE) file for details.

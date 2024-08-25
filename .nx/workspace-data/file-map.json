@@ -1,0 +1,515 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.6.2",
+  "deps": {
+    "@coral-xyz/anchor": "^0.30.1",
+    "@solana-developers/preset-next": "3.0.1",
+    "@solana/spl-token": "^0.4.8",
+    "@solana/wallet-adapter-base": "^0.9.23",
+    "@solana/wallet-adapter-react": "^0.15.35",
+    "@solana/wallet-adapter-react-ui": "^0.9.35",
+    "@solana/web3.js": "^1.95.3",
+    "@tabler/icons-react": "3.12.0",
+    "@tailwindcss/typography": "0.5.14",
+    "@tanstack/react-query": "5.52.1",
+    "@tanstack/react-query-next-experimental": "5.52.1",
+    "bs58": "6.0.0",
+    "buffer": "6.0.3",
+    "daisyui": "4.12.10",
+    "encoding": "0.1.13",
+    "jotai": "2.9.3",
+    "next": "14.2.6",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-hot-toast": "2.4.1",
+    "tslib": "^2.7.0",
+    "@nx/eslint": "19.6.2",
+    "@nx/eslint-plugin": "19.6.2",
+    "@nx/jest": "19.6.2",
+    "@nx/js": "19.6.2",
+    "@nx/next": "19.6.2",
+    "@nx/rollup": "19.6.2",
+    "@nx/workspace": "19.6.2",
+    "@swc-node/register": "~1.10.9",
+    "@swc/cli": "~0.4.0",
+    "@swc/core": "~1.7.18",
+    "@swc/helpers": "~0.5.12",
+    "@swc/jest": "0.2.36",
+    "@types/jest": "^29.5.12",
+    "@types/node": "22.5.0",
+    "@types/react": "18.3.4",
+    "@types/react-dom": "18.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.2.0",
+    "@typescript-eslint/parser": "^8.2.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "~8.57.0",
+    "eslint-config-next": "14.2.6",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-jsx-a11y": "6.9.0",
+    "eslint-plugin-react": "7.35.0",
+    "eslint-plugin-react-hooks": "4.6.2",
+    "jest": "^29.4.1",
+    "jest-environment-jsdom": "^29.4.1",
+    "nx": "19.6.2",
+    "postcss": "^8.4.41",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.10",
+    "ts-jest": "^29.1.0",
+    "ts-node": "10.9.2",
+    "typescript": "~5.5.4"
+  },
+  "pathMappings": {
+    "@/*": [
+      "./web/*"
+    ],
+    "@nft-marketplace/anchor": [
+      "anchor/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "tsconfig.base.json",
+        "hash": "5503327540014707136"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "4659032941502164483"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "4934098906304722861"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "17866138117546000433"
+      },
+      {
+        "file": "package.json",
+        "hash": "11911130870599030993"
+      },
+      {
+        "file": ".env.sample",
+        "hash": "13246566804950453437"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "3494843969422251966"
+      },
+      {
+        "file": "README.md",
+        "hash": "10549746397117936038"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": "nx.json",
+        "hash": "14557014133078539282"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "11523688455958181647"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "9229314680348739926"
+      },
+      {
+        "file": "postcss.config.js",
+        "hash": "1579725330904862112"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": "vercel.json",
+        "hash": "1598408354266276258"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".env",
+        "hash": "16520017319390827493"
+      },
+      {
+        "file": "tailwind.config.js",
+        "hash": "17937977961029477741"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "7032490051060470550"
+      }
+    ],
+    "projectFileMap": {
+      "web": [
+        {
+          "file": "web/.eslintrc.json",
+          "hash": "14075324894068274553"
+        },
+        {
+          "file": "web/app/account/[address]/page.tsx",
+          "hash": "6596633881127005929"
+        },
+        {
+          "file": "web/app/account/page.tsx",
+          "hash": "10599815897590818234"
+        },
+        {
+          "file": "web/app/api/hello/route.ts",
+          "hash": "495073956729887886"
+        },
+        {
+          "file": "web/app/basic/page.tsx",
+          "hash": "4990947597378635423"
+        },
+        {
+          "file": "web/app/clusters/page.tsx",
+          "hash": "14394253094813460549"
+        },
+        {
+          "file": "web/app/global.css",
+          "hash": "7108397253489769203"
+        },
+        {
+          "file": "web/app/layout.tsx",
+          "hash": "5349350634487137948"
+        },
+        {
+          "file": "web/app/page.module.css",
+          "hash": "4786619528779355986"
+        },
+        {
+          "file": "web/app/page.tsx",
+          "hash": "6765145944375368415"
+        },
+        {
+          "file": "web/app/react-query-provider.tsx",
+          "hash": "3045630838846882828",
+          "deps": [
+            "npm:react",
+            "npm:@tanstack/react-query-next-experimental",
+            "npm:@tanstack/react-query"
+          ]
+        },
+        {
+          "file": "web/components/account/account-data-access.tsx",
+          "hash": "12486200012402042725",
+          "deps": [
+            "npm:@solana/wallet-adapter-react",
+            "npm:@solana/spl-token",
+            "npm:@solana/web3.js",
+            "npm:@tanstack/react-query",
+            "npm:react-hot-toast"
+          ]
+        },
+        {
+          "file": "web/components/account/account-detail-feature.tsx",
+          "hash": "5078510326215063839",
+          "deps": [
+            "npm:@solana/web3.js",
+            "npm:react",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "web/components/account/account-list-feature.tsx",
+          "hash": "729224853085720231",
+          "deps": [
+            "npm:@solana/wallet-adapter-react",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "web/components/account/account-ui.tsx",
+          "hash": "15669230551060885779",
+          "deps": [
+            "npm:@solana/wallet-adapter-react",
+            "npm:@solana/web3.js",
+            "npm:@tabler/icons-react",
+            "npm:@tanstack/react-query",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "web/components/cluster/cluster-data-access.tsx",
+          "hash": "14689816500549093808",
+          "deps": [
+            "npm:@solana/web3.js",
+            "npm:jotai",
+            "npm:react",
+            "npm:react-hot-toast"
+          ]
+        },
+        {
+          "file": "web/components/cluster/cluster-feature.tsx",
+          "hash": "3533560093864689157",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "web/components/cluster/cluster-ui.tsx",
+          "hash": "16307074544026673789",
+          "deps": [
+            "npm:@solana/wallet-adapter-react",
+            "npm:@tabler/icons-react",
+            "npm:@tanstack/react-query",
+            "npm:react",
+            "npm:@solana/web3.js"
+          ]
+        },
+        {
+          "file": "web/components/dashboard/dashboard-feature.tsx",
+          "hash": "11259735208772531726"
+        },
+        {
+          "file": "web/components/marketplace/marketplace-data-access.tsx",
+          "hash": "17034592897333214500",
+          "deps": [
+            "npm:@coral-xyz/anchor",
+            "npm:@solana/wallet-adapter-react",
+            "npm:@solana/web3.js",
+            "npm:@tanstack/react-query",
+            "npm:react-hot-toast"
+          ]
+        },
+        {
+          "file": "web/components/marketplace/marketplace-feature.tsx",
+          "hash": "2802896368424778412",
+          "deps": [
+            "npm:@solana/wallet-adapter-react"
+          ]
+        },
+        {
+          "file": "web/components/marketplace/marketplace-ui.tsx",
+          "hash": "6244240079765578211",
+          "deps": [
+            "npm:@solana/web3.js"
+          ]
+        },
+        {
+          "file": "web/components/nft/NftForm.tsx",
+          "hash": "14049881728101102331",
+          "deps": [
+            "npm:react",
+            "npm:@solana/wallet-adapter-react",
+            "npm:@solana/web3.js",
+            "npm:@coral-xyz/anchor"
+          ]
+        },
+        {
+          "file": "web/components/solana/solana-provider.tsx",
+          "hash": "6458795527245399267",
+          "deps": [
+            "npm:next",
+            "npm:@coral-xyz/anchor",
+            "npm:@solana/wallet-adapter-base",
+            "npm:@solana/wallet-adapter-react",
+            "npm:@solana/wallet-adapter-react-ui",
+            "npm:react",
+            [
+              "npm:@solana/wallet-adapter-react-ui",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "web/components/ui/ui-layout.tsx",
+          "hash": "14578853178643156235",
+          "deps": [
+            "npm:react",
+            "npm:next",
+            "npm:react-hot-toast"
+          ]
+        },
+        {
+          "file": "web/config.ts",
+          "hash": "9271455358132846",
+          "deps": [
+            "npm:@coral-xyz/anchor",
+            "npm:@solana/web3.js"
+          ]
+        },
+        {
+          "file": "web/index.d.ts",
+          "hash": "5498222895072842432"
+        },
+        {
+          "file": "web/next-env.d.ts",
+          "hash": "5909181270615354023"
+        },
+        {
+          "file": "web/next.config.js",
+          "hash": "11075275437133129850",
+          "deps": [
+            "npm:@nx/next"
+          ]
+        },
+        {
+          "file": "web/postcss.config.js",
+          "hash": "2759402739052110475"
+        },
+        {
+          "file": "web/project.json",
+          "hash": "2951579398516498055"
+        },
+        {
+          "file": "web/public/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "web/public/favicon.ico",
+          "hash": "16419136197247807865"
+        },
+        {
+          "file": "web/public/logo.png",
+          "hash": "3061277012605342653"
+        },
+        {
+          "file": "web/tailwind.config.js",
+          "hash": "15953156811378497776",
+          "deps": [
+            "npm:@nx/react",
+            "npm:daisyui"
+          ]
+        },
+        {
+          "file": "web/tsconfig.json",
+          "hash": "17103121698585667203"
+        }
+      ],
+      "anchor": [
+        {
+          "file": "programs/.eslintrc.json",
+          "hash": "10876657505767112116"
+        },
+        {
+          "file": "programs/.swcrc",
+          "hash": "3236768094882387443"
+        },
+        {
+          "file": "programs/Anchor.toml",
+          "hash": "9165802400093387349"
+        },
+        {
+          "file": "programs/Cargo.lock",
+          "hash": "11498054427146027352"
+        },
+        {
+          "file": "programs/Cargo.toml",
+          "hash": "7403352042116871572"
+        },
+        {
+          "file": "programs/README.md",
+          "hash": "5088740394947298283"
+        },
+        {
+          "file": "programs/jest.config.ts",
+          "hash": "580677926350281041"
+        },
+        {
+          "file": "programs/migrations/deploy.ts",
+          "hash": "2019662584816957033",
+          "deps": [
+            "npm:@coral-xyz/anchor",
+            "npm:@solana/web3.js",
+            "npm:dotenv"
+          ]
+        },
+        {
+          "file": "programs/nft-marketplace/Cargo.toml",
+          "hash": "7778094039676284797"
+        },
+        {
+          "file": "programs/nft-marketplace/Xargo.toml",
+          "hash": "12304191003573283670"
+        },
+        {
+          "file": "programs/nft-marketplace/src/error.rs",
+          "hash": "10172750371643753745"
+        },
+        {
+          "file": "programs/nft-marketplace/src/instructions.rs",
+          "hash": "10800515456686714019"
+        },
+        {
+          "file": "programs/nft-marketplace/src/lib.rs",
+          "hash": "16275825430517853975"
+        },
+        {
+          "file": "programs/nft-marketplace/src/mod.rs",
+          "hash": "8372002336445349248"
+        },
+        {
+          "file": "programs/nft-marketplace/src/state.rs",
+          "hash": "16351831865943806080"
+        },
+        {
+          "file": "programs/nft-marketplace/src/utils.rs",
+          "hash": "7785855841042920027"
+        },
+        {
+          "file": "programs/package.json",
+          "hash": "6218332721754383731",
+          "deps": [
+            "npm:jest",
+            "npm:typescript",
+            "npm:@coral-xyz/anchor",
+            "npm:@solana/web3.js"
+          ]
+        },
+        {
+          "file": "programs/project.json",
+          "hash": "141831645580095741"
+        },
+        {
+          "file": "programs/target/deploy/keypair.json",
+          "hash": "7036570453408220462"
+        },
+        {
+          "file": "programs/target/idl/nft-marketplace.json",
+          "hash": "8816466110706155631"
+        },
+        {
+          "file": "programs/target/types/nft-marketplace.ts",
+          "hash": "5259348334400718190",
+          "deps": [
+            "npm:@solana/web3.js",
+            "npm:@coral-xyz/anchor"
+          ]
+        },
+        {
+          "file": "programs/tests/nft_marketplace.spec.ts",
+          "hash": "7055366096121099109",
+          "deps": [
+            "npm:@coral-xyz/anchor",
+            "npm:@solana/web3.js"
+          ]
+        },
+        {
+          "file": "programs/tsconfig.json",
+          "hash": "10503185093153460352"
+        },
+        {
+          "file": "programs/tsconfig.lib.json",
+          "hash": "12857729230989963964"
+        },
+        {
+          "file": "programs/tsconfig.spec.json",
+          "hash": "17313551537729802733"
+        }
+      ]
+    }
+  }
+}

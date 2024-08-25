@@ -1,0 +1,32 @@
+{
+  "name": "@nft-marketplace/anchor",
+  "version": "0.0.1",
+  "description": "Anchor-based library for NFT marketplace interactions on Solana",
+  "keywords": [
+    "solana",
+    "anchor",
+    "nft",
+    "marketplace"
+  ],
+  "main": "./index.cjs",
+  "module": "./index.js",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "start": "node ./index.js"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.30.0",
+    "@solana/web3.js": "1.91.9"
+  },
+  "devDependencies": {
+    "jest": "^27.0.0",
+    "typescript": "^4.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/barkprotocol/nft-markeplace-programs"
+  },
+  "license": "MIT"
+}
